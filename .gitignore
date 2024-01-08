@@ -1,0 +1,10 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+.git
+
+training_checkpoints/*
+!training_checkpoints/.gitkeep
+
+v1.0-U-Net/training_checkpoints/*
+!v1.0-U-Net/training_checkpoints/.gitkeep
