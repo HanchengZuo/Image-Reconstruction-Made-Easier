@@ -3,11 +3,11 @@
 
 .git
 
-training_checkpoints/**/*
-!training_checkpoints/**/.gitkeep
+# training_checkpoints/**/*
+# !training_checkpoints/**/.gitkeep
 
-# v1.0-U_Net/training_checkpoints/*
-# !v1.0-U_Net/training_checkpoints/.gitkeep
+v1.0-U_Net/training_checkpoints/*
+!v1.0-U_Net/training_checkpoints/.gitkeep
 
 # v1.1-U_Net-EarlyStopping(train anomaly)/training_checkpoints/*
 # !v1.1-U_Net-EarlyStopping(train anomaly)/training_checkpoints/.gitkeep
