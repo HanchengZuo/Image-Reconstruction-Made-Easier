@@ -3,8 +3,8 @@
 
 .git
 
-# training_checkpoints/**/*
-# !training_checkpoints/**/.gitkeep
+training_checkpoints/**/*
+!training_checkpoints/**/.gitkeep
 
 # v1.0-U_Net/training_checkpoints/*
 # !v1.0-U_Net/training_checkpoints/.gitkeep
@@ -16,7 +16,7 @@
 # v1.2-U_Net-EarlyStopping/training_checkpoints/
 
 # 忽略所有 training_checkpoints 文件夹下的内容
-training_checkpoints/**
+# training_checkpoints/**
 
 # 但保留所有 training_checkpoints 文件夹中的 .gitkeep 文件
-!training_checkpoints/**/.gitkeep
+# !training_checkpoints/**/.gitkeep
