@@ -4,28 +4,26 @@
 
 ### v1.2-U_Net-EarlyStopping
 
-**Version Description:** Added early stopping to [`v1.0-U_Net`](#v1.0-u_net): training halts if no reduction in `test generator loss` within `patience` epochs, but stops only after model save post the next `epoch_break`.
+**Version Description:** Added early stopping to `v1.0-U_Net`: training halts if no reduction in `test generator loss` within `patience` epochs, but stops only after model save post the next `epoch_break`.
 
-**Comparative Analysis:** Outperforms [`v1.0-U_Net`](#v1.0-u_net) in all metrics and visual quality. EarlyStopping prevents overfitting observed in [`v1.0-U_Net`](#v1.0-u_net) results. EarlyStopping training at epoch `225` instead of `300` epochs in [`v1.0-U_Net`](#v1.0-u_net).
+**Comparative Analysis:** Outperforms `v1.0-U_Net` in all metrics and visual quality. EarlyStopping prevents overfitting observed in `v1.0-U_Net` results. EarlyStopping training at epoch `225` instead of `300` epochs in `v1.0-U_Net`.
 
-**Key Component Summary:** Same as [`v1.0-U_Net`](#v1.0-u_net), except for the training method.
+**Key Component Summary:** Same as `v1.0-U_Net`, except for the training method.
 
 | Component                        | Brief Description                                                                                                                                  |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-|
 | Training Method                  | Simultaneous training, updating gradients every `batches_list_num` batches. <br/>Training stops if no improvement in `test generator loss` for `patience`(25) epochs, only stop at `epoch_break` intervals. |
 
 ---
 
 ### v1.1-U_Net-EarlyStopping(train anomaly)
 
-**Version Description:** Added early stopping to [`v1.0-U_Net`](#v1.0-u_net), but with faulty logic. Post-epoch 143, generator loss surged, degrading performance. Theoretically, early stopping shouldn't affect training; cause unknown.
+**Version Description:** Added early stopping to `v1.0-U_Net`, but with faulty logic. Post-epoch 143, generator loss surged, degrading performance. Theoretically, early stopping shouldn't affect training; cause unknown.
 
-**Key Component Summary:** Same as [`v1.0-U_Net`](#v1.0-u_net), except for the training method.
+**Key Component Summary:** Same as `v1.0-U_Net`, except for the training method.
 
 | Component                        | Brief Description                                                                                                                                  |
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-                                                                                                |
 | Training Method                  | Simultaneous training, updating gradients every `batches_list_num` batches. <br/>Early stopping. |
 
 ---
