@@ -12,3 +12,5 @@ v1.1-U_Net-EarlyStopping(train anomaly)/training_checkpoints/*
 v1.2-U_Net-EarlyStopping/training_checkpoints/*
 !v1.2-U_Net-EarlyStopping/training_checkpoints/.gitkeep
 
+v2.0-Bowtie-EarlyStopping/training_checkpoints/*
+!v2.0-Bowtie-EarlyStopping/training_checkpoints/.gitkeep

@@ -2,6 +2,24 @@
 
 ---
 
+### v2.0-Bowtie-EarlyStopping
+
+**Version Description:** Removed generator skip connections from version `v1.2-U_Net-EarlyStopping`, generator uses bowtie-like architecture. The performance obtained by bowtie-like training is far inferior to that of the U-Net structure, see `v1.2-U_Net-EarlyStopping` of the test for a comparison.
+
+**Key Component Summary:**
+
+| Component                        | Brief Description                                                                                                     |
+|----------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Gen Model Structure              | `Activation('tanh')` <br/>`UnitNormalizeLayer(L2+axis=2+epsilon=1e-6)`                         |
+| Gen Loss Function                | λ_rec(`10`) * reconstruction_loss (`cosine similarity`) +<br/> λ_adv(`1`) * adversarial_loss (`binary cross-entropy`) |                                                                                              |
+| Disc Model Structure             | `BatchNormalization()`<br/>`LeakyReLU(alpha=0.2)`<br/>`Activation('sigmoid')`                                         |
+| Disc Loss Function               | `Binary Crossentropy(1,real_output)`+`Binary Crossentropy(0,fake_output)`                                             |
+| Gen Optimizer<br/>Disc Optimizer | `Adam(1e-4)`<br/>`Adam(1e-4)`                                                                                         |
+| Training Mask                    | Irregular Line Mask                                                                                                   |
+| Training Method                  | Simultaneous training, updating gradients every `batches_list_num` batches. <br/>Training stops if no improvement in `test generator loss` for `patience`(25) epochs, only stop at `epoch_break` intervals. |
+
+---
+
 ### v1.2-U_Net-EarlyStopping
 
 **Version Description:** Added early stopping to `v1.0-U_Net`: training halts if no reduction in `test generator loss` within `patience` epochs, but stops only after model save post the next `epoch_break`.
