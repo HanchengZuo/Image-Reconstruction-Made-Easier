@@ -17,3 +17,12 @@ v2.0-Bowtie-EarlyStopping/training_checkpoints/*
 
 v3.0-U_Net-EarlyStopping-genOnly/training_checkpoints/*
 !v3.0-U_Net-EarlyStopping-genOnly/training_checkpoints/.gitkeep
+
+v4.0-U_Net-EarlyStopping-Train_Disc_then_Gen/training_checkpoints/*
+!v4.0-U_Net-EarlyStopping-Train_Disc_then_Gen/training_checkpoints/.gitkeep
+
+v5.0-U_Net-EarlyStopping-lambda999_1/training_checkpoints/*
+!v5.0-U_Net-EarlyStopping-lambda999_1/training_checkpoints/.gitkeep
+
+v5.1-U_Net-EarlyStopping-lambda100_1/training_checkpoints/*
+!v5.1-U_Net-EarlyStopping-lambda100_1/training_checkpoints/.gitkeep
