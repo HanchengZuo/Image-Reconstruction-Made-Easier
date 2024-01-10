@@ -14,3 +14,6 @@ v1.2-U_Net-EarlyStopping/training_checkpoints/*
 
 v2.0-Bowtie-EarlyStopping/training_checkpoints/*
 !v2.0-Bowtie-EarlyStopping/training_checkpoints/.gitkeep
+
+v3.0-U_Net-EarlyStopping-genOnly/training_checkpoints/*
+!v3.0-U_Net-EarlyStopping-genOnly/training_checkpoints/.gitkeep

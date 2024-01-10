@@ -2,6 +2,22 @@
 
 ---
 
+### v3.0-U_Net-EarlyStopping-genOnly
+
+**Version Description:** Removed discriminator from version `v1.2-U_Net-EarlyStopping`, train only the generator. Compared to the `v1.2-U_Net-EarlyStopping` version with alternate generator and discriminator training, the new generator training shows slightly better Loss, SSIM, and PSNR values. However, the visual quality of its predicted images is not as good, having some flaws.
+
+**Key Component Summary:**
+
+| Component           | Brief Description                                                                                                                                                                                             |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Gen Model Structure | `Activation('tanh')` <br/>`UnitNormalizeLayer(L2+axis=2+epsilon=1e-6)`                                                                                                                                        |
+| Gen Loss Function   | reconstruction_loss (`cosine similarity`)                                                                                                                                                                     |                                                                                              |
+| Gen Optimizer       | `Adam(1e-4)`                                                                                                                                                                                                  |
+| Training Mask       | Irregular Line Mask                                                                                                                                                                                           |
+| Training Method     | Only training generator, updating gradients every `batches_list_num` batches. <br/>Training stops if no improvement in `test generator loss` for `patience`(25) epochs, only stop at `epoch_break` intervals. |
+
+---
+
 ### v2.0-Bowtie-EarlyStopping
 
 **Version Description:** Removed generator skip connections from version `v1.2-U_Net-EarlyStopping`, generator uses bowtie-like architecture. The performance obtained by bowtie-like training is far inferior to that of the U-Net structure, see `v1.2-U_Net-EarlyStopping` of the test for a comparison.
