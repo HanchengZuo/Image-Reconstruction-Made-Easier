@@ -3,26 +3,51 @@
 
 .git
 
-v1.0-U_Net/training_checkpoints/*
-!v1.0-U_Net/training_checkpoints/.gitkeep
+v0.1-U_Net(Abandoned version)/training_checkpoints/*
+!v0.1-U_Net(Abandoned version)/training_checkpoints/.gitkeep
 
-v1.1-U_Net-EarlyStopping(train anomaly)/training_checkpoints/*
-!v1.1-U_Net-EarlyStopping(train anomaly)/training_checkpoints/.gitkeep
+v0.2-U_Net-EarlyStopping(train anomaly)(Abandoned version)/training_checkpoints/*
+!v0.2-U_Net-EarlyStopping(train anomaly)(Abandoned version)/training_checkpoints/.gitkeep
 
-v1.2-U_Net-EarlyStopping/training_checkpoints/*
-!v1.2-U_Net-EarlyStopping/training_checkpoints/.gitkeep
+v1.1-U_Net-EarlyStopping-lineMask/training_checkpoints/*
+!v1.1-U_Net-EarlyStopping-lineMask/training_checkpoints/.gitkeep
 
-v2.0-Bowtie-EarlyStopping/training_checkpoints/*
-!v2.0-Bowtie-EarlyStopping/training_checkpoints/.gitkeep
+v1.2-Bowtie-EarlyStopping-lineMask/training_checkpoints/*
+!v1.2-Bowtie-EarlyStopping-lineMask/training_checkpoints/.gitkeep
 
-v3.0-U_Net-EarlyStopping-genOnly/training_checkpoints/*
-!v3.0-U_Net-EarlyStopping-genOnly/training_checkpoints/.gitkeep
+v1.3-U_Net-EarlyStopping-scatteredSmallerBlobsMask/training_checkpoints/*
+!v1.3-U_Net-EarlyStopping-scatteredSmallerBlobsMask/training_checkpoints/.gitkeep
 
-v4.0-U_Net-EarlyStopping-Train_Disc_then_Gen/training_checkpoints/*
-!v4.0-U_Net-EarlyStopping-Train_Disc_then_Gen/training_checkpoints/.gitkeep
 
-v5.0-U_Net-EarlyStopping-lambda999_1/training_checkpoints/*
-!v5.0-U_Net-EarlyStopping-lambda999_1/training_checkpoints/.gitkeep
+v1.4-Bowtie-EarlyStopping-scatteredSmallerBlobsMask/training_checkpoints/*
+!v1.4-Bowtie-EarlyStopping-scatteredSmallerBlobsMask/training_checkpoints/.gitkeep
 
-v5.1-U_Net-EarlyStopping-lambda100_1/training_checkpoints/*
-!v5.1-U_Net-EarlyStopping-lambda100_1/training_checkpoints/.gitkeep
+v1.5-U_Net-EarlyStopping-singleLargeBlobMask/training_checkpoints/*
+!v1.5-U_Net-EarlyStopping-singleLargeBlobMask/training_checkpoints/.gitkeep
+
+v1.6-Bowtie-EarlyStopping-singleLargeBlobMask/training_checkpoints/*
+!v1.6-Bowtie-EarlyStopping-singleLargeBlobMask/training_checkpoints/.gitkeep
+
+v2.0-U_Net-EarlyStopping-genOnly/training_checkpoints/*
+!v2.0-U_Net-EarlyStopping-genOnly/training_checkpoints/.gitkeep
+
+v2.1-U_Net-EarlyStopping-SimultaneousGenerator&Discriminator/training_checkpoints/*
+!v2.1-U_Net-EarlyStopping-SimultaneousGenerator&Discriminator/training_checkpoints/.gitkeep
+
+v2.2-U_Net-EarlyStopping-Train_Disc_then_Gen/training_checkpoints/*
+!v2.2-U_Net-EarlyStopping-Train_Disc_then_Gen/training_checkpoints/.gitkeep
+
+v3.0-U_Net-EarlyStopping-lambda999_1/training_checkpoints/*
+!v3.0-U_Net-EarlyStopping-lambda999_1/training_checkpoints/.gitkeep
+
+v3.1-U_Net-EarlyStopping-lambda100_1/training_checkpoints/*
+!v3.1-U_Net-EarlyStopping-lambda100_1/training_checkpoints/.gitkeep
+
+v3.2-U_Net-EarlyStopping-lambda10_1/training_checkpoints/*
+!v3.2-U_Net-EarlyStopping-lambda10_1/training_checkpoints/.gitkeep
+
+v4.0-U_Net-EarlyStopping-lambda100_1_withMask/training_checkpoints/*
+!v4.0-U_Net-EarlyStopping-lambda100_1_withMask/training_checkpoints/.gitkeep
+
+v4.1-U_Net-EarlyStopping-lambda100_1_withoutMask/training_checkpoints/*
+!v4.1-U_Net-EarlyStopping-lambda100_1_withoutMask/training_checkpoints/.gitkeep
