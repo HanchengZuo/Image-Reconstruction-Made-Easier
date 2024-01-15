@@ -2,7 +2,7 @@
 
 ---
 
-### v5.1-U_Net-EarlyStopping-lambda100_1
+### v3.1-U_Net-EarlyStopping-lambda100_1
 
 **Version Description:** "In `v1.2-U_Net-EarlyStopping`, the generator's loss function hyperparameter was changed to 100:1. Test results show higher SSIM and PSNR compared to the 10:1 in the same version, but lower than 999:1 on `v5.0-U_Net-EarlyStopping-lambda999_1` version.
 
@@ -20,7 +20,7 @@
 
 ---
 
-### v5.0-U_Net-EarlyStopping-lambda999_1
+### v3.0-U_Net-EarlyStopping-lambda999_1
 
 **Version Description:** "In `v1.2-U_Net-EarlyStopping`, the generator's loss function hyperparameter was changed to 999:1. Test results show higher SSIM and PSNR compared to the 10:1 in the same version."
 
@@ -38,7 +38,7 @@
 
 ---
 
-### v4.0-U_Net-EarlyStopping-Train_Disc_then_Gen
+### 2.2-U_Net-EarlyStopping-Train_Disc_then_Gen
 
 **Version Description:** Adjusted the training step logic on the basis of `v1.2-U_Net-EarlyStopping` version. First, train the discriminator until convergence, then the generator until convergence. This convergence criterion uses the Early Stopping method, switching training based on no further updates in discriminator or generator loss on test data over 25 epochs. The overall training ends if the first epoch after switching to generator training doesn't produce better generator loss over 25 consecutive epochs. Based on the test results, the performance is not as good as the v1.2-U_Net-EarlyStopping version where the generator and discriminator are trained alternately.
 
@@ -56,7 +56,7 @@
 
 ---
 
-### v3.0-U_Net-EarlyStopping-genOnly
+### v2.0-U_Net-EarlyStopping-genOnly
 
 **Version Description:** Removed discriminator from version `v1.2-U_Net-EarlyStopping`, train only the generator. Compared to the `v1.2-U_Net-EarlyStopping` version with alternate generator and discriminator training, the new generator training shows slightly better Loss, SSIM, and PSNR values. However, the visual quality of its predicted images is not as good, having some flaws.
 
@@ -72,7 +72,7 @@
 
 ---
 
-### v2.0-Bowtie-EarlyStopping
+### v1.2-Bowtie-EarlyStopping
 
 **Version Description:** Removed generator skip connections from version `v1.2-U_Net-EarlyStopping`, generator uses bowtie-like architecture. The performance obtained by bowtie-like training is far inferior to that of the U-Net structure, see `v1.2-U_Net-EarlyStopping` of the test for a comparison.
 
@@ -90,7 +90,7 @@
 
 ---
 
-### v1.2-U_Net-EarlyStopping
+### v1.1-U_Net-EarlyStopping
 
 **Version Description:** Added early stopping to `v1.0-U_Net`: training halts if no reduction in `test generator loss` within `patience` epochs, but stops only after model save post the next `epoch_break`.
 
@@ -104,7 +104,7 @@
 
 ---
 
-### v1.1-U_Net-EarlyStopping(train anomaly)
+### v0.2-U_Net-EarlyStopping(train anomaly)
 
 **Version Description:** Added early stopping to `v1.0-U_Net`, but with faulty logic. Post-epoch 143, generator loss surged, degrading performance. Theoretically, early stopping shouldn't affect training; cause unknown.
 
@@ -116,7 +116,7 @@
 
 ---
 
-### v1.0-U_Net
+### v0.1-U_Net
 
 **Version Description:** Initial version.
 
