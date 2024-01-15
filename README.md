@@ -4,7 +4,7 @@
 
 ### v3.1-U_Net-EarlyStopping-lambda100_1
 
-**Version Description:** "In `v1.2-U_Net-EarlyStopping`, the generator's loss function hyperparameter was changed to 100:1. Test results show higher SSIM and PSNR compared to the 10:1 in the same version, but lower than 999:1 on `v5.0-U_Net-EarlyStopping-lambda999_1` version.
+**Version Description:** "In `v1.2-U_Net-EarlyStopping`, the generator's loss function hyperparameter was changed to 100:1. Test results show higher SSIM and PSNR compared to the 10:1 in the same version, but lower than 999:1 on `v3.0-U_Net-EarlyStopping-lambda999_1` version.
 
 **Key Component Summary:**
 
