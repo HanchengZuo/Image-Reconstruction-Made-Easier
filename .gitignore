@@ -28,6 +28,19 @@ v1.5-U_Net-EarlyStopping-singleLargeBlobMask/training_checkpoints/*
 v1.6-Bowtie-EarlyStopping-singleLargeBlobMask/training_checkpoints/*
 !v1.6-Bowtie-EarlyStopping-singleLargeBlobMask/training_checkpoints/.gitkeep
 
+v1.7-U_Net-EarlyStopping-RotatingLargeStripeMask/training_checkpoints/*
+!v1.7-U_Net-EarlyStopping-RotatingLargeStripeMask/training_checkpoints/.gitkeep
+
+
+v1.8-Bowtie-EarlyStopping-RotatingLargeStripeMask/training_checkpoints/*
+!v1.8-Bowtie-EarlyStopping-RotatingLargeStripeMask/training_checkpoints/.gitkeep
+
+v1.9-U_Net-EarlyStopping-EdgeCrescentMask/training_checkpoints/*
+!v1.9-U_Net-EarlyStopping-EdgeCrescentMask/training_checkpoints/.gitkeep
+
+v1.91-Bowtie-EarlyStopping-EdgeCrescentMask/training_checkpoints/*
+!v1.91-Bowtie-EarlyStopping-EdgeCrescentMask/training_checkpoints/.gitkeep
+
 v2.0-U_Net-EarlyStopping-genOnly/training_checkpoints/*
 !v2.0-U_Net-EarlyStopping-genOnly/training_checkpoints/.gitkeep
 
